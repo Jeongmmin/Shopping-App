@@ -24,9 +24,9 @@ function Type({ orderType }) {
     }
   };
 
-  if (error) {
-    return <ErrorBanner message="에러가 발생했습니다." />;
-  }
+  // if (error) {
+  //   return <ErrorBanner message="에러가 발생했습니다." />;
+  // }
 
   const ItemComponents = orderType === "products" ? Products : Options;
 
@@ -45,10 +45,10 @@ function Type({ orderType }) {
   return (
     <>
     {optionItems}
-      {/* <h2>주문 종류</h2>
-      <p>하나의 가격: {orderDatas.pricePerItem[orderType]}</p>
+      <h2>주문 종류</h2>
+      <p>하나의 가격: </p>
       <p>
-        {orderTypeKorean} 총 가격: {orderDatas.totals[orderType]}
+        총 가격: 
       </p>
       <div
         style={{
@@ -57,7 +57,7 @@ function Type({ orderType }) {
         }}
       >
         {optionItems}
-      </div> */}
+      </div>
     </>
   );
 }
