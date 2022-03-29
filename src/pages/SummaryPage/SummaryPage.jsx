@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 function index() {
 
-  const [checked, setChecked] = useState(false);
+  const [ checked, setChecked] = useState(false);
 
   return (
     <div>
